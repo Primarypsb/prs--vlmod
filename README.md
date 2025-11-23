@@ -12,7 +12,7 @@ The paper has been accepted by **2025 IEEE Conference on Computer Vision and Pat
 
     <img src="https://i.imgur.com/waxVImv.png" alt="Oryx Video-ChatGPT">This repository provides **partial code** for the **VLMOD Challenge (Track B)** — *Understanding Multi-Object World from Monocular View*.  
 
-Repository: https://github.com/Lidk1/MemoryWontLeak_VLMOD
+Repository: https://github.com/Primarypsb/prs-
 
 
 
