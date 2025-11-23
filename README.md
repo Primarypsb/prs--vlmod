@@ -1,3 +1,5 @@
+
+````markdown
 <div align="center">
 
 # VLMOD: Understanding Multi-Object World from Monocular View
@@ -26,10 +28,10 @@
 ## 📢 News
 * **[2025-02]** 🎉 Our paper has been accepted by **CVPR 2025**!
 * **[2025-02]** We have released the code and pretrained weights for the **VLMOD Challenge (Track B)**.
-
+* **[Repo]** Official Repository: [Primarypsb/prs-](https://github.com/Primarypsb/prs-)
 
 ---
-our Repository: [Primarypsb/prs-](https://github.com/Primarypsb/prs-)
+
 ## 📝 Introduction
 
 This repository contains the official implementation for **VLMOD** (Track B), focusing on **Multi-Object 3D Visual Grounding (3DVG)** based on a **single monocular RGB image**.
@@ -85,48 +87,87 @@ The repository is organized as follows:
 ├── 📦 feature_stats.pth     # [Checkpoints] Training data statistics (Mean/Std)
 ├── 📦 text_encoder.pth      # [Checkpoints] Trained Text Encoder weights
 └── 📦 object_vae.pth        # [Checkpoints] Trained Object VAE weights
-```
+````
+
+-----
+
 ## ⚙️ Installation & Setup
-1. Environment Requirements
-We recommend using Python >= 3.9 (Developed with Python 3.12.3) and PyTorch >= 2.0.0
+
+### 1\. Environment Requirements
+
+We recommend using **Python \>= 3.9** (Developed with Python 3.12.3) and **PyTorch \>= 2.0.0**.
+
+```bash
 # Clone the repository
 git clone [https://github.com/Primarypsb/prs-.git](https://github.com/Primarypsb/prs-.git)
 cd prs-
 
 # Install dependencies
 pip install -r requirements.txt
-2. Download Models & Weights
+```
+
+### 2\. Download Models & Weights
+
 You need to download the pretrained weights and place them in the correct directories.
-[Model / File	Description	Download Link
-Full Checkpoints	Includes object_vae.pth, text_encoder.pth, etc.	[suspicious link removed] (Code: 1818)](https://pan.baidu.com/s/1LDGQdmlkgdxQL6_x55wDCw?pwd=1818 提取码: 1818)
+
+| Model / File | Description | Download Link |
+| :--- | :--- | :--- |
+| **Full Checkpoints** | Includes `object_vae.pth`, `text_encoder.pth`, etc. | [Baidu Netdisk](https://pan.baidu.com/s/1LDGQdmlkgdxQL6_x55wDCw?pwd=1818) <br> **Code:** `1818` |
+
+-----
+
 ## 🚀 Usage
-1. Data Preparation
-Ensure your dataset JSON files are correctly placed:
 
-Training data -> train/
+### 1\. Data Preparation
 
-Testing data -> test/
+Ensure your dataset JSON files are correctly placed in the respective folders:
 
-2. Training
+  * **Training data** $\rightarrow$ `train/`
+  * **Testing data** $\rightarrow$ `test/`
+
+### 2\. Training
+
 To train the model from scratch (this script calculates stats and trains the VAE/Encoder):
+
+```bash
 python train.py
-Note: This script will automatically generate feature_stats.pth and save the best model weights during training.
-3. Inference
+```
+
+> **Note:** This script will automatically generate `feature_stats.pth` and save the best model weights during the training process.
+
+### 3\. Inference
+
 To run inference on the test set or perform model ensemble:
+
+```bash
 python run_inference.py
-The prediction results will be saved in the result/ directory.
+```
+
+The prediction results will be automatically saved in the `result/` directory.
+
+-----
+
 ## 🤝 Contribution
-We encourage the community to:
 
-Reproduce and verify the released modules.
+We welcome contributions from the community\! You can:
 
-Implement or improve other components.
+  * 🛠️ **Reproduce** and verify the released modules.
+  * ✨ **Implement** or improve other components.
+  * 💡 **Contribute** new ideas for monocular 3D visual grounding.
 
-Contribute new ideas for monocular 3D visual grounding.
+-----
+
 ## 📜 License
-This project is released under the Apache 2.0 License and is intended for academic and research purposes only.
+
+This project is released under the **Apache 2.0 License** and is intended for academic and research purposes only.
+
+-----
+
 ## 🏷️ Citation
+
 If you find this work helpful, please cite our paper:
+
+```bibtex
 @inproceedings{guo2025beyond,
   title={Beyond Human Perception: Understanding Multi-Object World from Monocular View},
   author={Guo, Keyu and Huang, Yongle and Sun, Shijie and Song, Xiangyu and Feng, Mingtao and Liu, Zedong and Song, Huansheng and Wang, Tiantian and Li, Jianxin and Akhtar, Naveed and others},
@@ -134,3 +175,7 @@ If you find this work helpful, please cite our paper:
   pages={3751--3760},
   year={2025}
 }
+```
+
+```
+```
