@@ -1,5 +1,4 @@
 
-````markdown
 <div align="center">
 
 # VLMOD: Understanding Multi-Object World from Monocular View
