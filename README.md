@@ -115,7 +115,7 @@ You need to download the pretrained weights and place them in the correct direct
 
 | Model / File | Description | Download Link |
 | :--- | :--- | :--- |
-| **Full Checkpoints** | Includes `object_vae.pth`, `text_encoder.pth`, etc. | [Baidu Netdisk](https://pan.baidu.com/s/1LDGQdmlkgdxQL6_x55wDCw?pwd=1818) <br> **Code:** `1818` |
+| **Full Checkpoints** | Includes `object_vae.pth`, `text_encoder.pth`, etc. | [Baidu Netdisk](https://pan.baidu.com/s/1rOu1cWKwBAEJzut7avCVtw?pwd=1818 ) <br> **Code:** `1818` |
 
 -----
 
